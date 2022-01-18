@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A4CAF50"
+    android:orientation="vertical"
+    tools:context=".Fragments.DirectMessageFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/manrope_semibold"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="@string/procedure"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12ssp" />
+
+    <com.hbb20.CountryCodePicker
+        android:layout_below="@id/msg"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="#334CAF50"
+        android:elevation="@dimen/_1sdp"
+        android:gravity="center" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textBoxEnterNo"
+        android:layout_below="@id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_25sdp"
+        android:elevation="@dimen/_1sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="Enter Mobile Number"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="noExcludeDescendants"
+            android:maxLength="10"
+            android:ems="10"
+            android:textSize="@dimen/_12ssp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <carbon.widget.Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textBoxEnterNo"
+        android:id="@+id/sendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/carbon_green_500"
+        android:padding="@dimen/_10sdp"
+        android:text="Direct Message"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:carbon_cornerRadius="@dimen/_8sdp"
+        app:carbon_elevation="@dimen/_4sdp"
+        app:carbon_rippleColor="@color/carbon_green_a100" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2008006514657655/3487590388"></com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</LinearLayout>

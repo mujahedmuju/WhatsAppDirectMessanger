@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.MoreFragment">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/whatsAppLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:carbon_cornerRadius="@dimen/_10sdp"
+        app:carbon_stroke="@color/carbon_blueGrey_50"
+        app:carbon_strokeWidth="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/imgWhatsappLogo"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/whatsapp_logo" />
+        <LinearLayout
+            android:id="@+id/textLayot"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_toRightOf="@id/imgWhatsappLogo"
+            android:layout_toLeftOf="@id/nextBtn1"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_bold"
+                android:text="What's App"
+                android:textColor="@color/carbon_green_500"
+                android:textSize="@dimen/_12ssp" />
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Download What's app Status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9ssp"
+            android:fontFamily="@font/manrope_semibold"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/nextBtn1"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/next_btn" />
+    </carbon.widget.RelativeLayout>
+
+
+<!--    <carbon.widget.RelativeLayout-->
+<!--        android:id="@+id/instagramLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_weight="0.5"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/_10sdp"-->
+<!--        app:carbon_cornerRadius="@dimen/_10sdp"-->
+<!--        app:carbon_stroke="@color/carbon_blueGrey_50"-->
+<!--        app:carbon_strokeWidth="@dimen/_1sdp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgInstaLogo"-->
+<!--            android:layout_width="@dimen/_55sdp"-->
+<!--            android:layout_height="@dimen/_55sdp"-->
+<!--            android:padding="@dimen/_12sdp"-->
+<!--            android:src="@drawable/instagram_logo" />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/inslayot"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/imgInstaLogo"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp"-->
+<!--            android:layout_marginBottom="@dimen/_10sdp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/manrope_bold"-->
+<!--                android:text="Instagram"-->
+<!--                android:textColor="@color/carbon_red_500"-->
+<!--                android:textSize="@dimen/_12ssp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:fontFamily="@font/manrope_semibold"-->
+<!--                android:text="Save Instagram Reels"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_9ssp" />-->
+<!--        </LinearLayout>-->
+<!--    </carbon.widget.RelativeLayout>-->
+<!--    </LinearLayout>-->
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/shareAppLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:carbon_cornerRadius="@dimen/_10sdp"
+        app:carbon_stroke="@color/carbon_blueGrey_50"
+        app:carbon_strokeWidth="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/imgShareApp"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/share_app" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/nextBtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgShareApp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_bold"
+                android:text="Share App"
+                android:textColor="@color/carbon_lightBlue_600"
+                android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share app with your friends and family"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                android:fontFamily="@font/manrope_semibold"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nextBtn4"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/next_btn" />
+    </carbon.widget.RelativeLayout>
+    <carbon.widget.RelativeLayout
+        android:id="@+id/aboutUsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:carbon_cornerRadius="@dimen/_10sdp"
+        app:carbon_stroke="@color/carbon_blueGrey_50"
+        app:carbon_strokeWidth="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/imgAboutUs"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/about_us" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/nextBtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgAboutUs"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_bold"
+                android:text="About Us"
+                android:textColor="@color/carbon_brown_700"
+                android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Know more about application"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                android:fontFamily="@font/manrope_semibold"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/nextBtn5"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:src="@drawable/next_btn"
+            android:padding="@dimen/_12sdp"
+            android:layout_alignParentRight="true"/>
+    </carbon.widget.RelativeLayout>
+    <carbon.widget.RelativeLayout
+        android:id="@+id/rateUsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:carbon_cornerRadius="@dimen/_10sdp"
+        app:carbon_stroke="@color/carbon_blueGrey_50"
+        app:carbon_strokeWidth="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/imgRateUs"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/rate_us_logo" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/nextBtn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgRateUs"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/manrope_bold"
+                android:text="Rate Us"
+                android:textColor="@color/carbon_yellow_800"
+                android:textSize="@dimen/_12ssp" />
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tell others what you think about this app"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                android:fontFamily="@font/manrope_semibold"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/nextBtn6"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:src="@drawable/next_btn"
+            android:padding="@dimen/_12sdp"
+            android:layout_alignParentRight="true"/>
+    </carbon.widget.RelativeLayout>
+
+</LinearLayout>

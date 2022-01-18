@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.AboutUsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+            <com.shashank.sony.fancyaboutpagelib.FancyAboutPage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fancyaboutpage">
+
+                <carbon.widget.ImageView
+                    android:id="@+id/circularImageView"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_140sdp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/carbon_green_50"
+                    android:src="@drawable/acumen_icon_placeholder"
+                    app:carbon_cornerRadius="@dimen/_60sdp" />
+            </com.shashank.sony.fancyaboutpagelib.FancyAboutPage>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

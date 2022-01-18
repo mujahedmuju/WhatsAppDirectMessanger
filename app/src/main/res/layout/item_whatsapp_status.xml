@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <carbon.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_2sdp"
+        app:carbon_cornerRadius="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/statusImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <carbon.widget.ImageView
+            android:visibility="gone"
+            android:background="@color/white"
+            android:id="@+id/playBtn"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_centerInParent="true"
+            app:carbon_elevation="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_9sdp"
+            android:paddingRight="@dimen/_7sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:src="@drawable/play_btn"
+            app:carbon_tint="@color/carbon_grey_700"
+            app:carbon_cornerRadius="@dimen/_13sdp"/>
+
+        <carbon.widget.ImageView
+            android:visibility="gone"
+            android:id="@+id/downloadStatusBtn"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:background="@color/white"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_baseline_download"
+            app:carbon_cornerRadius="@dimen/_11sdp"
+            app:carbon_elevation="@dimen/_2sdp"
+            app:carbon_tint="@color/black" />
+
+        <carbon.widget.ImageView
+            android:visibility="visible"
+            android:id="@+id/deleteBtn"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/carbon_red_700"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_baseline_delete"
+            app:carbon_elevation="@dimen/_2sdp"
+            app:carbon_tint="@color/white" />
+
+    </carbon.widget.RelativeLayout>
+
+</LinearLayout>

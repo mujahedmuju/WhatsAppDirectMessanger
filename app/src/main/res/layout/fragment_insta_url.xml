@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carbon_red_50"
+    android:orientation="vertical"
+    tools:context=".Fragments.InstaUrlFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:drawableLeft="@drawable/instagram_logo"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/manrope_semibold"
+                android:gravity="center_vertical"
+                android:text="You can download Only Instagram Reels\nby pasting the url here...\n\nNote : You Can't Download Photos,Videos and Stories\nIt should be updated very soon..."
+                android:textColor="#000000"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_25sdp"
+                android:elevation="@dimen/_1sdp"
+                app:boxStrokeColor="@color/carbon_red_500"
+                app:boxStrokeWidth="0.8dp"
+                app:hintTextColor="@color/carbon_red_500">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/urlLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/manrope_regular"
+                    android:hint="Url Here"
+                    android:importantForAutofill="noExcludeDescendants"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <carbon.widget.Button
+                    android:id="@+id/pasteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:background="@color/carbon_red_500"
+                    android:fontFamily="@font/manrope_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Paste"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    app:carbon_cornerRadius="@dimen/_10sdp"
+                    app:carbon_elevation="@dimen/_4sdp"
+                    app:carbon_rippleColor="@color/carbon_red_50" />
+
+                <carbon.widget.Button
+                    android:id="@+id/downloadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@color/carbon_red_500"
+                    android:fontFamily="@font/manrope_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Download"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    app:carbon_cornerRadius="@dimen/_10sdp"
+                    app:carbon_elevation="@dimen/_4sdp"
+                    app:carbon_rippleColor="@color/carbon_red_50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

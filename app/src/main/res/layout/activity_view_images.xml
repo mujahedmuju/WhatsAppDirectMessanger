@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ViewImagesActivity">
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_autoCenter="true"
+        app:zoomage_zoomable="true"
+        app:zoomage_translatable="true"
+        app:zoomage_minScale="0.6"
+        app:zoomage_maxScale="8"
+        />
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:id="@+id/videoView"/>
+
+    <carbon.widget.ImageView
+        android:id="@+id/share"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/share_img"
+        app:carbon_cornerRadius="@dimen/_18sdp"
+        app:carbon_tint="@color/carbon_blue_600" />
+
+    <carbon.widget.ImageView
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:rotation="180"
+        android:id="@+id/backBtn"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:background="@color/white"
+        android:elevation="@dimen/_3sdp"
+        android:src="@drawable/next_btn"
+        app:carbon_cornerRadius="@dimen/_18sdp"
+        app:carbon_tint="@color/carbon_blue_600" />
+
+</RelativeLayout>

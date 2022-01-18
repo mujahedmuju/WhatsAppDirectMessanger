@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WhatsappDirectMSGR</string>
+    <string name="whatsapp_direct_messenger">Whatsapp Direct Messenger \nand Download Status</string>
+    <string name="procedure">Send WhatsApp message without saving the contact.\n \nFirst, select country code and enter WhatsApp number to send WhatsApp message.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Download Status</string>
+</resources>
